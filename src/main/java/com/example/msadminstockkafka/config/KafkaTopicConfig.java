@@ -9,6 +9,6 @@ public class KafkaTopicConfig {
 
 @Bean
 public NewTopic stockTopic() {
-    return new NewTopic("stock", 3, (short) 3); // 3 particiones, 3 réplica ✅
+    return new NewTopic("stock", 3, (short) 3);
 }
 }

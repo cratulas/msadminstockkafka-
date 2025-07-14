@@ -16,7 +16,6 @@ public class StockService {
     private KafkaTemplate<String, StockDTO> kafkaTemplate;
 
     public void procesarStock(Long idProducto, int cantidadVendida) {
-        // Simulación: stock inicial es 1000, luego restamos
         int stockActualizado = 1000 - cantidadVendida;
 
         StockDTO stock = new StockDTO();
